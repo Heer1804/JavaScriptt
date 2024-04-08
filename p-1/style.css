@@ -15,12 +15,12 @@ h2{
 
 /* Button */
 
-button:hover {
-    
+.del{
+    background-color: #ade8f4 !important;
 }
 
 .clr {
-    background-color: #ff6d00 !important;
+    background-color: #ffa200 !important;
 }
 
 .ans {

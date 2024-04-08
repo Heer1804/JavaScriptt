@@ -9,7 +9,12 @@ function clearOutput() {
   output.value = null;
 }
 
-function getOpr(input) {
+function deleteDisplay(value){
+  let displayValue = document.getElementById("output").value;
+  document.getElementById("output").value = displayValue.slice(0,-1);
+}
+
+function getOp(input) {
   opr = input;
   num1 = parseInt(output.value);
   clearOutput();
@@ -35,6 +40,10 @@ function calculate() {
 
     case '/':
       ans = num1 / num2;
+      break;
+
+    case '%':
+      ans = num1 % num2;
       break;
   }
 
