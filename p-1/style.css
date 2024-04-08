@@ -1,0 +1,28 @@
+/* Calculator */
+.calculator {
+    grid-template-columns: repeat(4, 1fr);
+    flex-direction: column;
+}
+
+h2{
+    color: #003049;
+}
+
+/* Output */
+#output {
+    grid-column: 1 / -1;
+}
+
+/* Button */
+
+button:hover {
+    
+}
+
+.clr {
+    background-color: #ff6d00 !important;
+}
+
+.ans {
+    background-color: #0077b6 !important;
+}
