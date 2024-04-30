@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assests/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title h1 text-center my-3 fw-bold">
+            Menu
+        </div>
+        <div class="row gy-3">
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card bg-body-secondary rounded-2 p-3" data-name="Cheesecake" data-price="150">
+                    <img src="assests/img/1.jpg" alt="Cheesecake" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheesecake</h5>
+                        <p class="card-text">Price: $150</p>
+                        <button class="btn btn-dark" onclick="addToCart('Cheesecake')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card bg-body-secondary rounded-2 p-3" data-name="Cupcake" data-price="30">
+                    <img src="assests/img/2.jpg" alt="Cupcake" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Cupcake</h5>
+                        <p class="card-text">Price: $30</p>
+                        <button class="btn btn-dark" onclick="addToCart('Cupcake')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card bg-body-secondary rounded-2 p-3" data-name="brownie" data-price="50">
+                    <img src="assests/img/3.jpg" alt="brownie" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Brownie</h5>
+                        <p class="card-text">Price: $50</p>
+                        <button class="btn btn-dark" onclick="addToCart('brownie')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card bg-body-secondary rounded-2 p-3" data-name="creamroll" data-price="35">
+                    <img src="assests/img/4.jpg" alt="creamroll" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Creamroll</h5>
+                        <p class="card-text">Price: $35</p>
+                        <button class="btn btn-dark" onclick="addToCart('creamroll')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card bg-body-secondary rounded-2 p-3" data-name="pastry" data-price="90">
+                    <img src="assests/img/5.jpg" alt="pastry" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Pastry</h5>
+                        <p class="card-text">Price: $90</p>
+                        <button class="btn btn-dark" onclick="addToCart('pastry')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card bg-body-secondary rounded-2 p-3" data-name="chocolate" data-price="20">
+                    <img src="assests/img/6.jpg" alt="chocolate" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate</h5>
+                        <p class="card-text">Price: $20</p>
+                        <button class="btn btn-dark" onclick="addToCart('chocolate')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card bg-body-secondary rounded-2 p-3" data-name="brownie with icecream" data-price="150">
+                    <img src="assests/img/7.jpg" alt="brownie with icecream" class="card-img-top">
+                    <div class="card-body p-1">
+                        <h5 class="card-title">Brownie with icecream</h5>
+                        <p class="card-text">Price: $150</p>
+                        <button class="btn btn-dark" onclick="addToCart('brownie with icecream')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card bg-body-secondary rounded-2 p-3" data-name="candy" data-price="50">
+                    <img src="assests/img/8.jpg" alt="candy" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Candy</h5>
+                        <p class="card-text">Price: $50</p>
+                        <button class="btn btn-dark" onclick="addToCart('candy')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+     
+        </div>
+
+        <div id="cart" class="mt-4">
+            <h2 class="text-center fw-bolder">Cart</h2>
+            <ul id="cart-items" class="fs-4"></ul>
+            <p class="fw-medium fs-3">Total: $<span id="total">0</span></p>
+        </div>
+
+    </div>
+
+    <script src="assests/js/script.js"></script>
+</body
+
