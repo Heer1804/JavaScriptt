@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ATM</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container ">
+        <div class="d-flex justify-content-center align-items-center align-content-center vh-100 ">
+            <div class="card col-6 p-0 bg-transparent border-white  text-white " id="atm">
+                <div class="card-header text-center border-bottom border-white  ">
+                    <h2>ATM</h2>
+                </div>
+                <div class="card-body ">
+                    <div id="login">
+                        <h3 class="card-title mb-3">Login</h3>
+                        <div class="form-group text-body-emphasis">
+                            <label for="username">User:</label>
+                            <input type="text" class="form-control bg-transparent " id="username" name="username">
+                        </div>
+                        <div class="form-group text-body-emphasis">
+                            <label for="pin">PIN:</label>
+                            <input type="password" class="form-control bg-transparent " id="pin" name="pin">
+                        </div>
+                        <button class="btn btn-outline-light  px-3  mt-3 " onclick="login()">Login</button>
+                    </div>
+    
+                    <div id="menu" style="display: none;">
+                        <h5 class="card-title">Welcome</h5>
+                        <button class="btn btn-outline-light btn-block mb-2" onclick="checkBalance()">Check Balance</button>
+                        <button class="btn btn-outline-light btn-block mb-2" onclick="deposit()">Deposit</button>
+                        <button class="btn btn-outline-light btn-block mb-2" onclick="withdraw()">Withdraw</button>
+                        <button class="btn btn-danger btn-block" onclick="exit()">Exit</button>
+                    </div>
+    
+                    <div id="result" style="display: none;">
+                        <p id="message"></p>
+                        <button class="btn btn-primary" onclick="backToMenu()">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
+
+
