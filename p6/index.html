@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Structure Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="salary">
+            <div class="salary-table">
+                <table >
+                    <tr>
+                        <th colspan="4" class="comp">Company Name</th>
+                    </tr>
+                    <tr>
+                        <th colspan="4" class="head">Salary Structure Calculation</th>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="input">
+                            <input type="number" id="basicSalary" placeholder="Enter your basic salary">
+                            <button onclick="calculateSalary()">Calculate</button>
+                        </td>
+                    </tr>
+                    <tr class="th-start">
+                        <th colspan="2" class="earnings">
+                            Earnings
+                        </th>
+                        <th colspan="2" class="deduction">
+                            Deduction
+                        </th>
+                    </tr>
+                    <tr class="rows">
+                        <td style="border-style: none; border-left: 1px solid black;">Basic Salary:- </td>
+                        <td id="basicSalaryResult" style=" text-align: end;"></td>
+                        <td style="border-style: none; border-left: 1px solid black;">EPF:- </td>
+                        <td id="pfResult" style="border-style: none; border-right: 1px solid black; text-align: end;"></td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: none; border-left: 1px solid black;">Health Rent Allowance:- </td>
+                        <td id="hraResult" style="border-style: none; text-align: end;"></td>
+                        <td style="border-style: none; border-left: 1px solid black;">Health Insurance:- </td>
+                        <td id="hiResult" style="border-style: none; border-right: 1px solid black; text-align: end;"></td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: none; border-left: 1px solid black;">DA:- </td>
+                        <td id="daResult" style="border-style: none; border-right: 1px solid black; text-align: end;"></td>
+                        <td style="border-style: none; border-left: 1px solid black;">Professional Tax:- </td>
+                        <td id="ptResult" style="border-style: none; border-right: 1px solid black; text-align: end;"></td>
+                    </tr>
+                    <tr>
+                        <td style="border-style: none; border-left: 1px solid black;">Gross Salary:- </td>
+                        <td id="gsResult" style="font-weight: bold; border-style: none; border-right: 1px solid black; text-align: end;"></td>
+                        <td style="border-style: none; border-left: 1px solid black;">Total Deduction:- </td>
+                        <td id="tdResult" style="font-weight: bold; border-style: none; border-right: 1px solid black; text-align: end;"></td>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2" style="background-color:#0077b6 ; text-align: end; font-weight: bold; color: white; border-right: none;" class="net-pay">Net Payment</td>
+                            <td id="ntpResult" style="font-weight: bold; background-color:#0077b6; text-align: end; color: white;" colspan="2" class="net-pay"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
