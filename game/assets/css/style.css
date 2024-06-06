@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+#board {
+  background-color: black;
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+}
+
+#welcome-page {
+  display: block;
+}
+
+#game-page {
+  display: none;
+}

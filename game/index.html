@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Invaders</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- start page -->
+    <div id="welcome-page" class="text-center mt-4">
+      <h1 class="fw-bolder ">Space Invaders</h1>
+      <p class="h2 fw-bold mb-3">How to Play:</p>
+      <ul class="list-unstyled fs-5">
+        <li>Use the left and right arrow keys to move the ship.</li>
+        <li>Press the space bar to shoot bullets at the aliens.</li>
+        <li>Avoid letting the aliens reach your ship.</li>
+      </ul>
+      <p class="fw-bold fs-4">Highest Score: <span id="highest-score">0</span></p>
+      <button onclick="startGame()" class="btn btn-dark fs-6">Start Game</button>
+    </div>
+
+    <!-- Game Page -->
+  <div id="game-page" class="m-3 mb-3 ">
+    <canvas id="board" class="rounded-3 border "></canvas>
+    <button id="restart-button" class="btn btn-dark fs-6 mt-3" onclick="restartGame()">Restart Game</button>
+  </div>
+
+  </div>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
