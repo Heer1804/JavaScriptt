@@ -1,5 +1,6 @@
-// script.js
 let currentSlide = 0;
+let autoSlide = true;
+let intervalId;
 
 function showSlide(index) {
     const slides = document.querySelector('.slides');
@@ -20,10 +21,29 @@ function moveSlide(step) {
     showSlide(currentSlide + step);
 }
 
-// Automatically move slides every 3 seconds
-setInterval(() => {
-    moveSlide(1);
-}, 3000);
+function toggleAutoSlide() {
+    autoSlide = !autoSlide;
+    if (autoSlide) {
+        startAutoSlide();
+    } else {
+        stopAutoSlide();
+    }
+}
+
+function startAutoSlide() {
+    intervalId = setInterval(() => {
+        moveSlide(1);
+    }, 3000);
+}
+
+function stopAutoSlide() {
+    clearInterval(intervalId);
+}
 
 // Initialize the slider
 showSlide(currentSlide);
+startAutoSlide();
+
+// Add click event listener to toggle auto-slide on image click
+const slides = document.querySelector('.slides');
+slides.addEventListener('click', toggleAutoSlide);

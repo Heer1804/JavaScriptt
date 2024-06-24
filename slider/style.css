@@ -6,12 +6,12 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f3f3f3;
+    background-color: rgba(128, 243, 186, 0.541);
 }
 
 .slider {
     position: relative;
-    max-width: 600px;
+    max-width: 900px;
     width: 100%;
     overflow: hidden;
 }
