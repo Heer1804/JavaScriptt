@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>corona_api</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    
+body {
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+  </style>
+
+</head>
+
+<body class="vh-100">
+
+  <div class="text-center">
+    <h2 class="display-1 fw-bold text-primary">COVID-19</h2>
+    <h2 class="display-4 text-primary">DATA OF TOTAL NUMBER OF CASES</h2>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <div class="card bg-light text-dark m-3">
+          <div class="card-body">
+            <div class="mb-3">
+              <select class="form-select" id="allStatesName" name="allStatesName">
+                <option value="" selected disabled>Select State</option>
+              </select>
+              <br />
+              <span class="location" id="stateName"></span>
+            </div>
+            <hr class="text-dark" />
+            <div class="dataDiv">
+              <div class="d-flex justify-content-between">
+                <p>Total Confirmed</p>
+                <p id="confirmed"></p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p>Total Deceased</p>
+                <p id="deceased"></p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p>Total Recovered</p>
+                <p id="recovered"></p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p>Total Tested</p>
+                <p id="tested"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card bg-light text-dark m-3">
+          <div class="card-body">
+            <div class="mb-3">
+              <select class="form-select" id="allCitiesName" name="allCitiesName">
+                <option value="" selected disabled>Select City</option>
+              </select>
+              <br />
+              <span class="location" id="cityName"></span>
+            </div>
+            <hr class="text-dark" />
+            <div class="dataDiv">
+              <div class="d-flex justify-content-between">
+                <p>Total Confirmed</p>
+                <p id="cityConfirmed"></p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p>Total Deceased</p>
+                <p id="cityDeceased"></p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p>Total Recovered</p>
+                <p id="cityRecovered"></p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p>Total Tested</p>
+                <p id="cityTested"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h3 id="error" class="text-danger p-3"></h3>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
