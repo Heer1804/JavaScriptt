@@ -1,0 +1,77 @@
+class LinkList {
+  // first node create
+  constructor(value) {
+    this.head = {
+      value: value,
+      next_Node: null,
+    };
+    this.tail = this.head;
+    this.size = 1;
+  }
+
+  // add node at the end o list
+  addNode(nodeData) {
+    let newNode = {
+      value: nodeData,
+      next: null,
+    };
+    this.tail.next_Node = newNode;
+    this.tail = newNode;
+    this.size += 1;
+  }
+
+  // traversing (read all the nodes in list)
+  traversing() {
+    let counter = 1;
+    let current_Node = this.head; // read from starting
+
+    while (counter < this.size) {
+      console.log(current_Node);
+      current_Node = current_Node.next_Node;
+      counter++;
+    }
+  }
+
+  // delete any index
+  deleteNode(index) {
+    let counter = 1;
+    let lead = this.head;
+
+    if (index === 1) this.head = this.head.next_Node;
+    else {
+      while (counter < index - 1) {
+        lead = lead.next_Node;
+        counter++;
+      }
+      let next_Node = lead.next_Node.next_Node;
+      lead.next_Node = next_Node;
+    }
+  }
+
+  // insert Node at any index
+  insertNode(index, value) {
+    let counter = 1;
+    let current_Node = this.head;
+
+    while (counter > index) {
+      counter++;
+      current_Node = current_Node.next_Node;
+    }
+    let next_Node = current_Node.next_Node;
+
+    current_Node.next_Node = {
+      value: value,
+      next_Node: next_Node,
+    };
+  }
+  
+}
+
+let linkList = new LinkList(100);
+linkList.addNode(200);
+linkList.addNode(300);
+linkList.addNode(400);
+linkList.deleteNode(2);
+linkList.insertNode(2, 200);
+linkList.traversing();
+console.log(linkList);
