@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family:'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+#board {
+  background-color: black;
+} 
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgb(130, 133, 135) 0%,
+    rgba(228, 217, 217, 0) 50%
+  );
+}
